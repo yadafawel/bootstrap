@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- containeer html -->
+<!-- containeer html ou body de bootstrap-->
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a href="#" class="navbar-brand">Poissy</a>
@@ -54,13 +54,118 @@
              </ul>
          </div>
     </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Simple. Elegent. Awsome</h1>
+        <p class="lead">
+            
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, a, natus repellat sunt adipisci fuga eos itaque eligendi accusantium quis soluta aspernatur
+        </p>
+        <p class="lead">
+            <a href="" class="btn btn-primary btn-lg" role="button">voir plus</a>
+        </p>
+    </div>
+    <!-- fin de jumbotron -->
+
+    <!-- 
+        section de trois  colonne 
+     -->
+     <!-- les colonnes avec la classe .col sont automatiquement de la même longeur  -->
+     <!-- si on voulais par example avoir avoire une colonne plus que les autres il faut ajouter un chiffre .col-6 par example -->
+
+    
+     <div class="row">
+        <div class="col">
+            <!-- dans un soconde temps on revien sur cette ligne pour la 1ére dans trois carte cf. laligne  -->
+            <!-- en efectif avec la class .col cette zone n'est pas responsive  donc  ensuite on rajoute la classe .col-sm-12 à chaque carte pour indiquer que sur un petite écran la carte occupera toute la longeur de la grille qui fais 12 colonne dans BS la classe .col-md-4 indiquer que sur un écran de taille moyenne et plus grand chaque carte occupera 1/3 de l'espace  -->
+
+
+            <!-- <div class="col-sm-12 col-md-4"></div> -->
+            <div class="card">
+                <!-- cette carte une fois que la modification précédente  est effactuer occupe 100% de la longeur de la grille 
+                nous alons donc rajouter une marge avec les classes de BS sur les carte en moidifien la ligne 95-->
+                <!-- avec BS on peut ajouter des marge exterieur avec m et de padding (interieur ) avec p
+                aprés le m ou le p on peut ajouter soit -t (top/haut )
+            - b(bottom - bas ) -->
+           
+           
+            <!-- - l( left/-gauche)
+            -r(right/droit)
+            -x(droit & gauche )
+            - y (haut & bas )
+            ou rien pour les 4 côter indiquer apres un titre (-)on indique une taille de 0à 5 ( 5 étant la plus large )
+
+            Ici on vas ajouter une marge en bas de 4 pour avoir une space entre la 1ére carte et les 2 suivantes -->
+
+            <!-- .card-body mb-4 text-center -->
+                <div class="card-body text-center">
+                    <h5 class="card-title">titre de la carte</h5>
+                    <p class="card-text">petite prase d'accroche pour la card</p>
+                    <a href="#" class="card-link">une autre lien</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">titre de la carte</h5>
+                    <p class="card-text">petite prase d'accroche pour la card</p>
+                    <a href="#" class="card-link">une autre lien</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">titre de la carte</h5>
+                    <p class="card-text">petite prase d'accroche pour la card</p>
+                    <a href="#" class="card-link">une autre lien</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- fin de la troisieme colonne  -->
+
+    <!-- section de deux blocks dans une navigation secondaire latérale à droite  -->
+    <div class="row mt-sm-4 mt-md-4">
+        <!-- la clace .mt c'est pour margine top est un chifre de 0 à 5 -->
+        <div class="col-sm-12 col-md-8">
+            <!-- si on souhait que sur mobile le text de tout cette div soit centré on rajouterait 2 classe .text-sm-centre et .text-md-left -->
+            <!--  class="col-sm-12-col-sm12col-md-8 text-sm-centre text-md-left"></> -->
+            <h3>un titre important</h3>
+            <p class="lead">on peut ajouer un sous titre, qui est plus large mais en gris en utilisanla class .lead de bootstrap</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae culpa nisi consequatur, vitae facilis explicabo ipsum ducimus unde obcaecati. Fugit.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus incidunt vitae repellendus, architecto libero omnis mollitia necessitatibus enim dolores exercitationem tempore iusto natus accusamus laborum, perspiciatis, ratione veritatis illo quaerat!</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <!-- .col-sm-12 col-md-4>h3.mn4{menu secondaire}+ul.nav flex-column nav-pills> -->
+            <h3 class="mb-4">menu secondaire</h3>
+            
+
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Activé</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">lien</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">lien</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">désactivé</a></li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 
 
 
 
 
-
+<!-- jQuery popur bootstrap toujour avant le java script de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/
